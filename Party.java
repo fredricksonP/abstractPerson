@@ -21,11 +21,14 @@ public class Party {
 	public Party() {
 		// Important, the below classes are my child classes.   You need to replace them 
 		// with your own.   This should be the only code you need to change in party.java
-		people.add(new Philosopher("Plato", "Heavy Thinker"));
-		people.add(new PetOwner("Dr. Doolittle", "Vet", "cat", "Mittens"));
-		people.add(new Introvert("Greta Garbo", "Actress"));
-		people.add(new Extrovert("Scooby Doo", "Private Eye"));
-		people.add(new PetOwner("Frazier", "Psychiatrist", "dog", "Eddie"));
+//		people.add(new Philosopher("Plato", "Heavy Thinker"));
+//		people.add(new PetOwner("Dr. Doolittle", "Vet", "cat", "Mittens"));
+//		people.add(new Introvert("Greta Garbo", "Actress"));
+//		people.add(new Extrovert("Scooby Doo", "Private Eye"));
+//		people.add(new PetOwner("Frazier", "Psychiatrist", "dog", "Eddie"));
+		people.add(new Runner("Jerry", "Accountant"));
+		people.add(new Bartender("Myke", "Doordasher", "Virgin Jack and Coke"));
+		people.add(new Clown("Smiles", "NFT creator", "52"));
 	}
 	
 	/**

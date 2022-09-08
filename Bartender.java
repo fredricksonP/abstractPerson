@@ -2,6 +2,12 @@ import java.util.Random;
 import java.util.*;
 
 public class Bartender extends Person{
+	private String favDrink;
+	public Bartender(String name, String occ, String favoriteDrink) {
+		super(name, occ);
+		favDrink = favoriteDrink;
+		// TODO Auto-generated constructor stub
+	}
 	private String q1 = "Can I get your number?";
 	private String q2 = "Did it hurt? When you fell from heaven?";
 	private String q3 = "Do you want to go on a date?";
@@ -14,13 +20,12 @@ public class Bartender extends Person{
 	private String[] answers = {ans1, ans2, ans3};
 	
 	//TODO make it a truly random number generator for pizzaz
-	Random random = new Random();
-	
-//	long seed = 95;
-//	random.setSeed(seed);
+	int randy = (int) Math.random();
+	Random random = new Random(randy);
+
+	//Ask a question with a randomly generated question pulled from an question bank
 	@Override
 	void askQuestion() {
-		// TODO Auto-generated method stub
 		int x = random.nextInt() % 3;
 		if(x == 0) {
 			System.out.println(questions[0]);
@@ -32,10 +37,9 @@ public class Bartender extends Person{
 			System.out.println(questions[2]);
 		}
 	}
-
+	//answer a question with a randomly generated answer pulled from an answer bank
 	@Override
 	void answerQuestion() {
-		// TODO Auto-generated method stub
 		int x = random.nextInt() % 3;
 		if(x == 0) {
 			System.out.println(answers[0]);
